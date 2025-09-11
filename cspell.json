@@ -1,0 +1,22 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "firebase",
+    "AIzaSyBdkdp0bafKM9COuByGsa5chLGwlkoaNGw",
+    "skill-tree-game.firebaseapp.com",
+    "skill-tree-game",
+    "skill-tree-game.firebasestorage.app",
+    "55143752777",
+    "1:55143752777:web:68cb047c9b40bb1e890b98",
+  ],
+  "ignorePaths": [
+    "node_modules",
+    ".next",
+    "public",
+    "*.js",
+    "*.log",
+    ".turbo",
+    ".git"
+  ]
+}

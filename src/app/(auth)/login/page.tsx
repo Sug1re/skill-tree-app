@@ -2,28 +2,27 @@
 
 import React from "react";
 import { Box } from "@mui/material";
-import SignupForm from "@/components/Forms/SignupForm";
+import LoginForm from "@/components/Forms/LoginForm";
 import BaseButton from "@/components/Base/BaseButton";
 import { useRouter } from "next/navigation";
 
-export default function Home() {
+export default function LoginPage() {
   const router = useRouter();
-
   return (
     <>
       <Box display="flex" flexDirection="column" gap={4}>
-        <SignupForm
+        <LoginForm
           onSignupSuccess={() => {
-            router.push("/login");
+            router.push("/signup");
           }}
         />
         <BaseButton
           color="green"
           type="button"
           width="90%"
-          onClick={() => router.push("/login")}
+          onClick={() => router.push("/signup")}
         >
-          ログイン
+          新規登録
         </BaseButton>
       </Box>
     </>

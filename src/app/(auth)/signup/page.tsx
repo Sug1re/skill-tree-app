@@ -6,7 +6,7 @@ import SignupForm from "@/components/Forms/SignupForm";
 import BaseButton from "@/components/Base/BaseButton";
 import { useRouter } from "next/navigation";
 
-export default function Home() {
+export default function SignupPage() {
   const router = useRouter();
 
   return (
