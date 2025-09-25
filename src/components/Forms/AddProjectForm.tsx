@@ -13,7 +13,7 @@ type SignupFormProps = {
   onSignupSuccess: () => void;
 };
 
-const LoginForm = ({ onSignupSuccess }: SignupFormProps) => {
+const AddProjectForm = ({ onSignupSuccess }: SignupFormProps) => {
   const { showToast } = useToastContext();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -109,7 +109,7 @@ const LoginForm = ({ onSignupSuccess }: SignupFormProps) => {
             display: "flex",
             flexDirection: "column",
             margin: "0 auto",
-            width: "100%",
+            width: "90%",
             gap: 2,
             mb: 2,
           }}
@@ -142,4 +142,4 @@ const LoginForm = ({ onSignupSuccess }: SignupFormProps) => {
   );
 };
 
-export default LoginForm;
+export default AddProjectForm;

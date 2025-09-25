@@ -73,6 +73,7 @@ const SignupForm = ({ onSignupSuccess }: SignupFormProps) => {
     setPasswordError(passwordErr);
 
     if (emailErr || passwordErr) return;
+
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       showToast("登録に成功しました！", "success");
@@ -105,7 +106,7 @@ const SignupForm = ({ onSignupSuccess }: SignupFormProps) => {
             display: "flex",
             flexDirection: "column",
             margin: "0 auto",
-            width: "90%",
+            width: "100%",
             gap: 2,
             mb: 2,
           }}
