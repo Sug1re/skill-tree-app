@@ -2,6 +2,7 @@
 
 import { SideBarProvider } from "@/context/SideBarContext";
 import SideBar from "@/components/Layout/SideBar";
+import { ModalProvider } from "@/context/ModalContext";
 
 export default function LoggedInLayout({
   children,
@@ -10,8 +11,10 @@ export default function LoggedInLayout({
 }) {
   return (
     <SideBarProvider>
-      <SideBar />
-      {children}
+      <ModalProvider>
+        <SideBar />
+        {children}
+      </ModalProvider>
     </SideBarProvider>
   );
 }

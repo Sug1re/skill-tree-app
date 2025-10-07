@@ -14,7 +14,7 @@ type SideBarItem = {
 };
 
 export const SIDE_BAR_TOP: SideBarItem[] = [
-  { id: "home", icon: HomeIcon, label: "Home", fontSize: 32 },
+  { id: "home", icon: HomeIcon, label: "ホーム", fontSize: 32 },
   { id: "add", icon: AddIcon, label: "プロジェクト作成", fontSize: 28 },
   { id: "search", icon: SearchIcon, label: "検索", fontSize: 28 },
   { id: "settings", icon: SettingsIcon, label: "設定", fontSize: 28 },
